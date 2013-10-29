@@ -1,21 +1,22 @@
-# purnam-crafty-game
+# example.purnam.game
 
-A game in clojurescript, built with purnam and crafty.js
+A game in clojurescript, built with [purnam](https://github.com/purnam/purnam) and [crafty.js](http://craftyjs.com/)
+
+![ScreenShot](https://raw.github.com/purnam/example.purnam.game/master/crafty-screen.png)
 
 ## Usage
 
 Clone this project and compile using cljsbuild:
 
-> git clone https://github.com/zcaudate/purnam-crafty-game.git
-> cd purnam-crafty-game
-> lein cljsbuild once
-> open resource/public/crafty.html
+    > git clone https://github.com/purnam/example.purnam.game.git
+    > cd example.purnam.game
+    > lein cljsbuild once
+    > open resource/public/crafty.html
 
-It should look something like [this](docs.caudate.me/purnam-crafty-game)
+It should look something like [this](http://docs.caudate.me/purnam-crafty-game)
 
 ## License
 
-Copyright © 2013 Chris Zheng
+Copyright © 2014 Chris Zheng
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Distributed under the The MIT License.

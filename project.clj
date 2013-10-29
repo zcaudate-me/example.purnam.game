@@ -1,12 +1,12 @@
-(defproject purnam-crafty-game "0.0.0-SNAPSHOT"
+(defproject example.purnam.game "0.0.0-SNAPSHOT"
   :description "Crafty Game Demo"
-  :url "http://docs.caudate.me/purnam-crafty-game"
+  :url "http://purnam.github.io/example.purnam.game"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.5.1"]
-                 [org.clojure/clojurescript "0.0-1978"]
-                 [im.chit/purnam "0.1.5"]]
-  
+                 [im.chit/purnam.core "0.4.3"]]
+  :profiles {:dev {:dependencies [[org.clojure/clojurescript "0.0-2138"]]
+                   :plugins [[lein-cljsbuild "1.0.0"]]}}
   :cljsbuild
   {:builds  [{:source-paths ["src"],
               :id "crafty-demo",

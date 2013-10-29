@@ -1,7 +1,6 @@
 (ns purnam-crafty-game.core
-  (:use [purnam.cljs :only [aget-in aset-in]])
   (:require [goog.object :as o])
-  (:use-macros [purnam.js :only [obj arr ! def.n def*n def* do*n]]))
+  (:use-macros [purnam.core :only [obj arr ! def.n def*n def* do*n]]))
 
  (def* G
   {:grid {:width 24
@@ -19,10 +18,9 @@
        (js/Crafty.init (G.width) (G.height))
        (js/Crafty.background "rgb(20, 75, 40)")
        (js/Crafty.scene "Game")))})
-;; Components
+
 
 (do*n
-  
  (js/Crafty.c
   "Grid"
   {:init
@@ -78,6 +76,7 @@
 
    :stopMovement
    (fn []
+     ;;(js/console.log )
      (! this._speed 0)
      (when this._movement
        (! this.x (- this.x this._movement.x))
