@@ -19,7 +19,6 @@
        (js/Crafty.background "rgb(20, 75, 40)")
        (js/Crafty.scene "Game")))})
 
-
 (do*n
  (js/Crafty.c
   "Grid"
