@@ -1,6 +1,9 @@
 (ns purnam-crafty-game.core
   (:require [goog.object :as o])
-  (:use-macros [purnam.core :only [obj arr ! def.n def*n def* do*n]]))
+  (:use-macros [purnam.core :only [obj arr ! def.n def*n def* do*n]]
+               [purnam.common :only [set-safe-aget]]))
+
+(set-safe-aget false)
 
  (def* G
   {:grid {:width 24
@@ -236,3 +239,5 @@
 
 
 (def START (fn [] (js/Crafty.scene "Game")))
+
+(set-safe-aget true)
