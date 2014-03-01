@@ -3,9 +3,7 @@ lein: lein2
 before_install:
 - npm install karma
 script:
-- lein2 midje
 - lein2 cljsbuild once
-- karma start --single-run --browsers PhantomJS
 notifications:
   email:
     recipients:
